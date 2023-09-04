@@ -9,7 +9,6 @@ import { additionalTech, tech } from "../Content/content";
 import WhileInView from "../components/WhileInView";
 import SlideIn from "../components/SlideIn";
 import SlideLeft from "../components/SlideLeft";
-import certificate from "../../public/images/certificate.png";
 import Romeo from "../../public/images/Romeo.png";
 import Road from "../components/Road";
 const Intro = () => {
