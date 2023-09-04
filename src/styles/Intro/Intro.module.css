@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.Romeo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.black {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  padding-bottom: 2em;
+  background-color: var(--black);
+  position: relative;
+  z-index: 1;
+}
+
+.black::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/grain.png");
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+
+.black > div {
+  width: 100%;
+  text-align: center;
+}
+
+.black > div > span {
+  font-family: Choice;
+  color: var(--yellow);
+  padding-bottom: 1em;
+  text-align: center;
+  font-size: 22px;
+}
+
+.black > div > h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 1em;
+}
+
+.yellow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/grain.png");
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.yellow {
+  font-size: 20px;
+  text-align: left;
+  font-family: Choice;
+  color: black;
+  font-weight: 700;
+  padding: 0 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.story {
+  padding: 1em 0;
+}
+
+.story > h4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/grain.png");
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.story h4 {
+  color: var(--yellow);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background-color: var(--black);
+  width: max-content;
+  padding: 0.5em;
+  position: relative;
+  z-index: 1;
+}
+
+.story p {
+  margin-top: 1em;
+  color: black;
+}
+
+.techContainer {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  position: relative;
+  z-index: 1;
+  gap: 2em;
+}
+
+.techContainer > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.techContainer > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.techContainer > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+
+.techContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/grain.png");
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.quote {
+  background-color: var(--black);
+  color: var(--yellow);
+  position: relative;
+  line-height: 1.5em;
+}
+
+.yellowRight {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .Romeo {
+    width: 50%;
+  }
+
+  .black {
+    box-sizing: unset;
+    padding: 2em 0;
+  }
+
+  .black > div > span {
+    font-size: 30px;
+  }
+
+  .black > div > h1 {
+    font-size: 30px;
+  }
+
+  .techContainer > div:nth-child(1),
+  .techContainer > div:nth-child(2) {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .yellow {
+    padding: 3em 1em;
+  }
+
+  .techContainer svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .black {
+    box-sizing: unset;
+    padding: 5em 0;
+  }
+
+  .Romeo {
+    width: 80%;
+    height: 300px;
+  }
+
+  .yellow {
+    padding: 3em;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .black {
+    box-sizing: unset;
+    padding: 5em 0;
+  }
+
+  .Romeo {
+    width: 80%;
+    height: 300px;
+  }
+
+  .yellow {
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .techContainer > div:nth-child(1),
+  .techContainer > div:nth-child(2) {
+    width: 40%;
+  }
+
+  .yellowLeft {
+    width: 60%;
+  }
+
+  .yellowRight {
+    display: block;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .Romeo {
+    height: 500px;
+  }
+
+  .yellow {
+    padding: 3em 12em;
+  }
+
+  .techContainer svg {
+    width: 70px;
+    height: 70px;
+  }
+}

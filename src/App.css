@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Avionic";
+  src: url("../public/fonts/Avionic/Fontspring-DEMO-avionic-bold.otf");
+}
+
+@font-face {
+  font-family: "URW";
+  src: url("../public/fonts/URWGroteskSCLig\ W03\ Regular/URWGroteskSCLig W03 Regular.otf");
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("../public/fonts/Conduit\ ITC\ ExtraLight\ Regular/Conduit ITC ExtraLight Regular.otf");
+}
+
+@font-face {
+  font-family: "Choice";
+  src: url("../public/fonts/bestchoicedemo-regular.otf");
+}
+
+:root {
+  --black: #1c1c1c;
+  --yellow: #f6da59;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.Typewriter__cursor {
+  color: var(--yellow);
+}
+
+.dots_cursor {
+  color: var(--black);
+}
+
+.descriptionCursor {
+  color: black;
+}
