@@ -192,6 +192,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .Romeo {
+    width: 30%;
+  }
+
   .yellow {
     padding: 3em 1em;
   }
@@ -209,7 +213,7 @@
   }
 
   .Romeo {
-    width: 80%;
+    width: 40%;
     height: 300px;
   }
 
@@ -220,13 +224,19 @@
 
 @media screen and (min-width: 1700px) {
   .black {
+    height: unset;
     box-sizing: unset;
     padding: 5em 0;
   }
 
+  .black > div:nth-child(2) {
+    margin: 2em 0;
+  }
+
   .Romeo {
-    width: 80%;
-    height: 300px;
+    width: 50%;
+    height: 500px;
+    object-fit: contain;
   }
 
   .yellow {
@@ -253,6 +263,7 @@
 
 @media screen and (min-width: 2560px) {
   .Romeo {
+    width: 30%;
     height: 500px;
   }
 
