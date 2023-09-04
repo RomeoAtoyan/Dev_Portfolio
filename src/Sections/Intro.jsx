@@ -12,6 +12,7 @@ import SlideLeft from "../components/SlideLeft";
 import Romeo from "/images/Romeo.png";
 import Road from "../components/Road";
 import certificate from "/images/Certificate.png";
+import ArrowDown from "../assets/ArrowDown"
 const Intro = () => {
   return (
     <div className="intro">
@@ -156,13 +157,13 @@ const Intro = () => {
               <SlideLeft>
                 <p>
                   Being an ambitious person by nature , I will not stop at Front
-                  End Development. I want to reach beyond my potential and
-                  become a great Full Stack Developer and own a software
-                  company. I really love what I do and believe that
+                  End Development. I want to reach my potential and beyond to
+                  become a great Full Stack Engineer. I really love what I do
+                  and believe that <ArrowDown strokeWidth={3} size={15} color={"black"} />
                 </p>
                 <span className={styles.quote}>
-                  If you do what you love, you will not have to work a single
-                  day in your life.
+                  "If you do what you love, you will not have to work a single
+                  day in your life"
                 </span>
               </SlideLeft>
             </div>
