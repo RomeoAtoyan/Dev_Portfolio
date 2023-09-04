@@ -6,8 +6,8 @@ import PC from "../assets/PC";
 import Udemy from "../assets/Udemy";
 import CodeCademy from "../assets/CodeCademy";
 import Code from "../assets/Code";
-import intec from "../../public/images/intec.png";
-import FMA from "../../public/images/FMA.svg";
+import intec from "/images/intec.png";
+import FMA from "/images/FMA.svg";
 
 const Road = () => {
   return (

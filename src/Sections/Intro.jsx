@@ -9,9 +9,9 @@ import { additionalTech, tech } from "../Content/content";
 import WhileInView from "../components/WhileInView";
 import SlideIn from "../components/SlideIn";
 import SlideLeft from "../components/SlideLeft";
-import Romeo from "../../public/images/Romeo.png";
+import Romeo from "/images/Romeo.png";
 import Road from "../components/Road";
-import certificate from "../../public/images/Certificate.png";
+import certificate from "/images/Certificate.png";
 const Intro = () => {
   return (
     <div className="intro">
