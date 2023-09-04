@@ -11,10 +11,12 @@ import SlideIn from "../components/SlideIn";
 import SlideLeft from "../components/SlideLeft";
 import Romeo from "../../public/images/Romeo.png";
 import Road from "../components/Road";
+import certificate from "../../public/images/Certificate.png";
 const Intro = () => {
   return (
     <div className="intro">
       <Black className={styles.black}>
+        <h1>DEV.ROMEO</h1>
         <div>
           <img className={styles.Romeo} src={Romeo} alt="" />
         </div>
@@ -44,12 +46,12 @@ const Intro = () => {
               <SlideLeft>
                 <p>
                   Already having the passion and great interest for computers at
-                  a very young age building my custom PC's , upgrading them and
+                  a very young age building my custom PC's, upgrading them and
                   even fixing them. I was destined to find my way in the IT
                   world. As an adult I followed online courses on development on
                   platforms like Udemy and CodeCademy. After that I applied for
-                  a 8 month training course in Brussels. Travelling there and
-                  learning development and earning a certificate Instantly I
+                  an 8 month training course in Brussels. Travelling there,
+                  learning development and earning a certificate. Instantly I
                   became hooked and I've been learning since.
                 </p>
               </SlideLeft>
@@ -94,7 +96,26 @@ const Intro = () => {
             <div className={styles.story}>
               <SlideLeft transition={2}>
                 <h4>
-                  3. The Experience{" "}
+                  3. Certificate{" "}
+                  <Arrow strokeWidth={2} size={20} color={"var(--yellow)"} />
+                </h4>
+              </SlideLeft>
+              <SlideLeft>
+                <div>
+                  <img
+                    className={styles.certificate}
+                    src={certificate}
+                    alt=""
+                  />
+                </div>
+              </SlideLeft>
+            </div>
+          </WhileInView>
+          <WhileInView>
+            <div className={styles.story}>
+              <SlideLeft transition={2}>
+                <h4>
+                  4. The Experience{" "}
                   <Arrow strokeWidth={2} size={20} color={"var(--yellow)"} />
                 </h4>
               </SlideLeft>
@@ -104,7 +125,7 @@ const Intro = () => {
                   the technical skills I acquired in a real professional
                   environment. I was given 3 projects to complete by the end of
                   my internship which went flawlessly. Altough I had to use
-                  Next.js which I had no experience with , I quickly adapted and
+                  Next.js which I had no experience with, I adapted and
                   completed them. Overall I learned alot of new things working
                   in a real environment.
                 </p>
@@ -115,7 +136,7 @@ const Intro = () => {
             <div className={styles.story}>
               <SlideLeft transition={2}>
                 <h4>
-                  4. The Projects{" "}
+                  5. The Projects{" "}
                   <Arrow strokeWidth={2} size={20} color={"var(--yellow)"} />
                 </h4>
               </SlideLeft>
@@ -128,7 +149,7 @@ const Intro = () => {
             <div className={styles.story}>
               <SlideLeft transition={2}>
                 <h4>
-                  3. What Now{" "}
+                  6. What Now{" "}
                   <Arrow strokeWidth={2} size={20} color={"var(--yellow)"} />
                 </h4>
               </SlideLeft>

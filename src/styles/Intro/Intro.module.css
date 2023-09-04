@@ -19,6 +19,18 @@
   z-index: 1;
 }
 
+.black > h1 {
+  top: 1%;
+  left: 1%;
+  text-align: left;
+  position: absolute;
+  color: var(--black);
+  background-color: var(--yellow);
+  padding: 0.5em;
+  font-size: 1em;
+  font-family: "Press Start 2P", cursive;
+}
+
 .black::before {
   content: "";
   position: absolute;
@@ -111,6 +123,12 @@
 .story p {
   margin-top: 1em;
   color: black;
+  line-height: 2em;
+}
+
+.certificate {
+  margin-top: 1em;
+  width: 100%;
 }
 
 .techContainer {
@@ -172,6 +190,11 @@
     width: 50%;
   }
 
+  .black > h1 {
+    background-color: unset;
+    color: var(--yellow);
+  }
+
   .black {
     box-sizing: unset;
     padding: 2em 0;
@@ -189,6 +212,10 @@
   .techContainer > div:nth-child(2) {
     width: 60%;
   }
+
+  .black > h1 {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -203,6 +230,10 @@
   .techContainer svg {
     width: 50px;
     height: 50px;
+  }
+
+  .certificate {
+    width: 70%;
   }
 }
 
@@ -219,6 +250,24 @@
 
   .yellow {
     padding: 3em;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .yellow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .yellowLeft {
+    width: 60%;
+  }
+
+  .yellowRight {
+    display: block;
+    width: 30%;
+    text-align: center;
   }
 }
 
@@ -250,15 +299,6 @@
   .techContainer > div:nth-child(2) {
     width: 40%;
   }
-
-  .yellowLeft {
-    width: 60%;
-  }
-
-  .yellowRight {
-    display: block;
-    width: 30%;
-  }
 }
 
 @media screen and (min-width: 2560px) {
@@ -269,6 +309,11 @@
 
   .yellow {
     padding: 3em 12em;
+  }
+
+  .techContainer > div:nth-child(1),
+  .techContainer > div:nth-child(2) {
+    width: 60%;
   }
 
   .techContainer svg {
