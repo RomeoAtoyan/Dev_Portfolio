@@ -12,7 +12,9 @@ import SlideLeft from "../components/SlideLeft";
 import Romeo from "/images/Romeo.png";
 import Road from "../components/Road";
 import certificate from "/images/Certificate.png";
-import ArrowDown from "../assets/ArrowDown"
+import ArrowDown from "../assets/ArrowDown";
+import cv from "../assets/RomeoAtoyanCV.pdf";
+
 const Intro = () => {
   return (
     <div className="intro">
@@ -159,7 +161,8 @@ const Intro = () => {
                   Being an ambitious person by nature , I will not stop at Front
                   End Development. I want to reach my potential and beyond to
                   become a great Full Stack Engineer. I really love what I do
-                  and believe that <ArrowDown strokeWidth={3} size={15} color={"black"} />
+                  and believe that{" "}
+                  <ArrowDown strokeWidth={3} size={15} color={"black"} />
                 </p>
                 <span className={styles.quote}>
                   "If you do what you love, you will not have to work a single
@@ -167,6 +170,11 @@ const Intro = () => {
                 </span>
               </SlideLeft>
             </div>
+            <span>
+              <a className={styles.cv} href={cv} download>
+                Download CV
+              </a>
+            </span>
           </WhileInView>
         </div>
         <div className={styles.yellowRight}>
