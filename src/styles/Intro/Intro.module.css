@@ -248,6 +248,7 @@
 
 @media screen and (min-width: 1440px) {
   .black {
+    height: max-content;
     box-sizing: unset;
     padding: 5em 0;
   }
